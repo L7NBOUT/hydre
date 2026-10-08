@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HYDRE — Boutique</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080808;color:#f4f1eb;font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
+.nav{height:72px;border-bottom:1px solid #242424;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;position:sticky;top:0;background:#080808ee;backdrop-filter:blur(14px);z-index:20}.logo{font-weight:800;font-size:23px;letter-spacing:.3em}.links{display:flex;gap:28px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}.bag{border:1px solid #444;padding:10px 14px;font-size:11px;letter-spacing:.15em}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 20px;background:radial-gradient(circle at 50% 20%,#363636,#111 34%,#080808 72%)}.eyebrow{font-size:11px;letter-spacing:.35em;color:#aaa}.hero h1{font-size:clamp(65px,15vw,175px);letter-spacing:.13em;margin:16px 0}.hero p{color:#aaa;line-height:1.7;max-width:520px;margin:0 auto 28px}.btn{display:inline-block;background:#f4f1eb;color:#080808;padding:14px 25px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;border:0;cursor:pointer}
+.section{padding:72px 5vw}.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.heading h2{font-size:30px;letter-spacing:.08em;margin:0}.heading span{font-size:10px;color:#888;letter-spacing:.18em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#101010;border:1px solid #252525;cursor:pointer;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#555}.pic{aspect-ratio:4/5;background:linear-gradient(145deg,#191919,#555);display:grid;place-items:center}.product{width:45%;height:57%;background:#0b0b0b;clip-path:polygon(22% 0,39% 12%,61% 12%,78% 0,100% 23%,82% 38%,74% 27%,74% 100%,26% 100%,26% 27%,18% 38%,0 23%);box-shadow:0 25px 40px #000}.capshape{width:55%;height:25%;border-radius:55% 55% 12% 12%;background:#0b0b0b;transform:translateY(20%);box-shadow:0 22px 35px #000}.info{padding:18px}.name{text-transform:uppercase;letter-spacing:.12em;font-size:12px}.meta{display:flex;justify-content:space-between;margin-top:9px;color:#aaa;font-size:12px}.tag{font-size:9px;letter-spacing:.15em;color:#777;margin-top:12px}
+.story{padding:100px 10%;border-top:1px solid #252525;border-bottom:1px solid #252525;text-align:center}.story h2{font-size:clamp(35px,6vw,72px);letter-spacing:.08em;margin:0 0 20px}.story p{max-width:650px;margin:auto;color:#999;line-height:1.8}
+.news{background:#f4f1eb;color:#080808;padding:65px 8%;display:flex;justify-content:space-between;align-items:center;gap:30px}.news h2{margin:0;font-size:28px;letter-spacing:.07em}.news p{color:#555;font-size:13px}.field{display:flex;border-bottom:1px solid #333;padding:10px 0}.field input{background:none;border:0;outline:0;padding:5px;width:220px}.field button{background:none;border:0;font-weight:700;cursor:pointer}
+.footer{padding:40px 5vw;color:#777;font-size:10px;letter-spacing:.15em;display:flex;justify-content:space-between}.toast{position:fixed;bottom:22px;right:22px;background:#f4f1eb;color:#080808;padding:14px 18px;font-size:11px;display:none;z-index:50}.modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:40;padding:20px}.modalbox{background:#111;border:1px solid #333;max-width:520px;width:100%;padding:30px}.close{float:right;background:none;border:0;color:#fff;font-size:22px;cursor:pointer}.modalbox h2{letter-spacing:.08em}.size{display:flex;gap:8px;margin:20px 0}.size button{background:#111;border:1px solid #555;color:#fff;padding:11px 18px;cursor:pointer}.size button.active{background:#f4f1eb;color:#080808}
+@media(max-width:700px){.links{display:none}.grid{grid-template-columns:1fr 1fr}.news{display:block}.footer{display:block;line-height:2.2}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="logo">HYDRE</div><div class="links"><a href="#shop">Shop</a><a href="#story">About</a><a href="#contact">Contact</a></div><div class="bag">BAG <span id="count">0</span></div></nav>
+<section class="hero"><div><div class="eyebrow">TUNISIA · NEW DROP 2026</div><h1>HYDRE</h1><p>Quiet confidence. Clean silhouettes. A Tunisian streetwear identity made for everyday presence.</p><a class="btn" href="#shop">Shop the drop</a></div></section>
+<section class="section" id="shop"><div class="heading"><h2>THE DROP</h2><span>ESSENTIALS / 01</span></div><div class="grid">
+<article class="card" data-name="HYDRE Signature Tee" data-price="89 TND"><div class="pic"><div class="product"></div></div><div class="info"><div class="name">HYDRE Signature Tee</div><div class="meta"><span>89 TND</span><span>01</span></div><div class="tag">ESSENTIAL / OVERSIZED</div></div></article>
+<article class="card" data-name="HYDRE Oversized Tee" data-price="99 TND"><div class="pic"><div class="product" style="transform:scale(.92)"></div></div><div class="info"><div class="name">HYDRE Oversized Tee</div><div class="meta"><span>99 TND</span><span>02</span></div><div class="tag">CORE / HEAVY COTTON</div></div></article>
+<article class="card" data-name="HYDRE Cap" data-price="59 TND"><div class="pic"><div class="capshape"></div></div><div class="info"><div class="name">HYDRE Cap</div><div class="meta"><span>59 TND</span><span>03</span></div><div class="tag">ACCESSORY / DAILY</div></div></article>
+</div></section>
+<section class="story" id="story"><h2>LESS NOISE.<br>MORE PRESENCE.</h2><p>HYDRE is built around minimal design, strong identity and pieces made to become part of your everyday uniform.</p></section>
+<section class="news" id="contact"><div><h2>GET THE NEXT DROP.</h2><p>Be first to know when HYDRE releases new pieces.</p></div><div class="field"><input id="email" type="email" placeholder="your@email.com"><button onclick="subscribe()">JOIN</button></div></section>
+<footer class="footer"><span>© 2026 HYDRE</span><span>INSTAGRAM · TUNISIA</span></footer>
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><div class="eyebrow">PRODUCT</div><h2 id="mname"></h2><p id="mprice" style="color:#aaa"></p><div class="size"><button onclick="pick(this)">S</button><button onclick="pick(this)">M</button><button onclick="pick(this)">L</button><button onclick="pick(this)">XL</button></div><button class="btn" style="width:100%" onclick="addBag()">ADD TO BAG</button></div></div><div class="toast" id="toast"></div>
+<script>
+document.querySelectorAll('.card').forEach(c=>c.onclick=()=>{document.getElementById('mname').textContent=c.dataset.name;document.getElementById('mprice').textContent=c.dataset.price;document.getElementById('modal').style.display='grid'});
+function closeModal(){document.getElementById('modal').style.display='none'} function pick(b){document.querySelectorAll('.size button').forEach(x=>x.classList.remove('active'));b.classList.add('active')}
+function addBag(){document.getElementById('count').textContent=+document.getElementById('count').textContent+1;closeModal();show('Added to bag — prototype')}
+function subscribe(){show(document.getElementById('email').value?'You’re on the HYDRE list — prototype':'Enter your email')}
+function show(t){let x=document.getElementById('toast');x.textContent=t;x.style.display='block';setTimeout(()=>x.style.display='none',1700)}
+</script>
+</body></html>
